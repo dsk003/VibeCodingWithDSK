@@ -1135,6 +1135,26 @@ html {
     transform: translateX(3px);
 }
 
+/* Closed enrollment button styling */
+.enroll-button-closed {
+    background: linear-gradient(135deg, #ff4444 0%, #cc0000 100%) !important;
+    cursor: not-allowed !important;
+    opacity: 0.9;
+}
+
+.enroll-button-closed:hover {
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+.enroll-button-closed::before {
+    display: none !important;
+}
+
+.enroll-button-closed:hover .button-icon {
+    transform: none !important;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
